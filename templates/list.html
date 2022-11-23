@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Checkpoint 1</title>
+  </head>
+  <body>
+    <h1>Checkpoint database</h1>
+    <p> {{date[0]}}-{{date[1]}}-{{date[2]}}:</p>
+    <ul>
+       {% for item in list %}
+          <li>{{item[0]}}: {{item[1]}}</li>
+       {% endfor %}
+    </ul>
+
+    <form action="/delete">
+       <label for="name">Delete:</label><br>
+       <input type="text" id="name" name="name" value="Caesar">
+       <input type="submit" value="Delete">
+    </form>
+    <form action="/insert">
+       <label for="name">Insert:</label><br>
+       <input type="text" id="name" name="name" value="Caesar"><br>
+       <input type="text" id="phone" name="phone" value="077-1212321">
+       <input type="submit" value="Insert">
+    </form>
+  </body>
+</html>
+
