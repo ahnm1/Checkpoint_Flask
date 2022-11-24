@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 from datetime import datetime
 import psycopg2
 
+
 def db_connection():
     conn = psycopg2.connect(   
         host     = "localhost",
